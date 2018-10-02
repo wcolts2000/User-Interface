@@ -66,22 +66,34 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+p, button {
+	font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	padding: 10px;
 	margin-bottom: 30px;
+	background-color: aqua;
+	border-radius: 0 0 10px 10px;
+	position: fixed;
+	z-index: 100;
 }
 
 header nav {
 	display: inline-block;
 	padding: 20px;
 	padding-left: 0;
-	height: 60px;
+	height: 60px;	
 }
 
 header nav a {
 	margin-right: 40px;
 	text-decoration: none;
 	color: rgba(211, 211, 211, 0.877);
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 header nav a:last-child {
@@ -95,7 +107,8 @@ header .logo {
 
 .hero {
 	border-bottom: 3px solid gray;
-	height: 450px;
+	height: 550px;
+	padding-top: 120px;
 }
 
 .hero .left {
@@ -120,6 +133,8 @@ header .logo {
 	padding: 7px 50px;
 	border: 1px solid gray;
 	box-shadow: 0 1px 2px black;
+	animation: wiggle 1s infinite;
+	transition: all 0.8s ease;
 }
 
 .hero img {
@@ -132,6 +147,10 @@ main {
 	width: 800px;
 	overflow: hidden;
 	border-bottom: 3px solid gray;
+}
+
+main.product {
+	height: 200px;
 }
 
 main .card-2,
@@ -150,6 +169,8 @@ main .card-2 {
 .three-col {
 	padding-bottom: 100px;
 }
+
+
 
 main img {
 	margin: 80px 0 20px;
@@ -184,3 +205,86 @@ address {
 	margin-bottom: 20px;
 }
 
+.product.hero {
+	border-bottom: 1px dashed gray;
+}
+
+.product.hero img {
+	border-radius: 5px;
+	margin-top: 50px;
+	transition: all 0.8s ease-in-out;
+}
+
+.product.hero img:hover {
+	transform-origin: top right;
+	transform: scale(1.5);
+}
+
+.card-2 span {
+	vertical-align: super;
+	font-size: 1rem;
+}
+
+ .productcard.card-2 p:last-of-type {
+	font-size: 2rem;
+}
+
+header .image.logo {
+	background-image: url(../img/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 160px;
+	margin: 10px 0 0 100px;
+}
+
+section.hero .hero-img {
+	background-image: url(../img/header-img.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 350px;
+	float: right;
+	height: 350px;
+}
+
+.product-hero-img {
+	background-image: url(https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&h=350);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 350px;
+	float: right;
+	height: 350px;
+	margin-top: 50px;
+	transition: all 0.8s ease-in-out;
+}
+
+.product-hero-img:hover {
+	transform-origin: top right;
+	transform: scale(1.5);
+}
+
+.img-divider {
+	background-image: url(../img/mid-page-accent.jpg);
+	max-width: 800px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 200px; 
+	margin-top: 60px
+}
+
+
+@keyframes wiggle {
+	0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+.footer-product{
+	text-align: center;
+	background: aqua;
+	padding: 30px;
+	margin-bottom: 0;
+}

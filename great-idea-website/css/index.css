@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -287,4 +288,295 @@ section.hero .hero-img {
 	background: aqua;
 	padding: 30px;
 	margin-bottom: 0;
+=======
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+		font-family: 'Titillium Web', sans-serif;
+		max-width: 800px;
+		margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+p, button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	padding: 10px;
+	margin-bottom: 30px;
+	background-color: aqua;
+	border-radius: 0 0 10px 10px;
+	position: fixed;
+	z-index: 100;
+}
+
+header nav {
+	display: inline-block;
+	padding: 20px;
+	padding-left: 0;
+	height: 60px;	
+}
+
+header nav a {
+	margin-right: 40px;
+	text-decoration: none;
+	color: rgba(211, 211, 211, 0.877);
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+header nav a:last-child {
+	margin-right: 0;
+}
+
+header .logo {
+	float: right;
+	padding: 15px;
+}
+
+.hero {
+	border-bottom: 3px solid gray;
+	height: 550px;
+	padding-top: 120px;
+}
+
+.hero .left {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 4.5rem;
+	text-align: center;
+	margin: 50px auto 10px;
+}
+.hero h1 span {
+	display: block;
+	margin: 0 auto;
+}
+
+.hero button {
+	margin: 0 auto;
+	background-color: white;
+	padding: 7px 50px;
+	border: 1px solid gray;
+	box-shadow: 0 1px 2px black;
+	animation: wiggle 1s infinite;
+	transition: all 0.8s ease;
+}
+
+.hero img {
+	float: right;
+}
+
+main {
+	padding: 30px 0;
+	height: 600px;
+	width: 800px;
+	overflow: hidden;
+	border-bottom: 3px solid gray;
+}
+
+main.product {
+	height: 200px;
+}
+
+main .card-2,
+main .card-3 {
+	float: left;
+}
+
+main .card-2 {
+	width: 50%;
+	float: left;
+	height: 100px;
+	padding: 20px;
+}
+
+.two-col,
+.three-col {
+	padding-bottom: 100px;
+}
+
+
+
+main img {
+	margin: 80px 0 20px;
+	max-width: 800px;
+}
+
+main .card-3 {
+	width: 33%;
+	float: left;
+	height: 100px;
+	padding: 20px;
+}
+
+footer {
+	clear: both;
+}
+
+footer {
+	margin: 40px 0;
+}
+
+footer p {
+	margin-bottom: 20px;
+}
+
+footer p:last-child {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+address {
+	margin-bottom: 20px;
+}
+
+.product.hero {
+	border-bottom: 1px dashed gray;
+}
+
+.product.hero img {
+	border-radius: 5px;
+	margin-top: 50px;
+	transition: all 0.8s ease-in-out;
+}
+
+.product.hero img:hover {
+	transform-origin: top right;
+	transform: scale(1.5);
+}
+
+.card-2 span {
+	vertical-align: super;
+	font-size: 1rem;
+}
+
+ .productcard.card-2 p:last-of-type {
+	font-size: 2rem;
+}
+
+header .image.logo {
+	background-image: url(../img/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 160px;
+	margin: 10px 0 0 100px;
+}
+
+section.hero .hero-img {
+	background-image: url(../img/header-img.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 350px;
+	float: right;
+	height: 350px;
+}
+
+.product-hero-img {
+	background-image: url(https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&h=350);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 350px;
+	float: right;
+	height: 350px;
+	margin-top: 50px;
+	transition: all 0.8s ease-in-out;
+}
+
+.product-hero-img:hover {
+	transform-origin: top right;
+	transform: scale(1.5);
+}
+
+.img-divider {
+	background-image: url(../img/mid-page-accent.jpg);
+	max-width: 800px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 200px; 
+	margin-top: 60px
+}
+
+
+@keyframes wiggle {
+	0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+.footer-product{
+	text-align: center;
+	background: aqua;
+	padding: 30px;
+	margin-bottom: 0;
+>>>>>>> f0e3a9c6da80400e94d03e6ff4876b3bee262dcd
 }

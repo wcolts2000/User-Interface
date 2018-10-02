@@ -54,7 +54,9 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+		font-family: 'Titillium Web', sans-serif;
+		max-width: 800px;
+		margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +66,120 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+header {
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+header nav {
+	display: inline-block;
+	padding: 20px;
+	height: 60px;
+}
+
+header nav a {
+	margin-right: 40px;
+	text-decoration: none;
+	color: rgba(211, 211, 211, 0.877);
+}
+
+header nav a:last-child {
+	margin-right: 0;
+}
+
+header .logo {
+	float: right;
+	padding: 15px;
+}
+
+.hero {
+	border-bottom: 3px solid gray;
+	height: 450px;
+}
+
+.hero .left {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 4.5rem;
+	text-align: center;
+	margin: 50px auto 10px;
+}
+.hero h1 span {
+	display: block;
+	margin: 0 auto;
+}
+
+.hero button {
+	margin: 0 auto;
+	background-color: white;
+	padding: 7px 50px;
+	border: 1px solid gray;
+	box-shadow: 0 1px 2px black;
+}
+
+.hero img {
+	float: right;
+}
+
+main {
+	padding: 30px 0;
+	height: 600px;
+	width: 800px;
+	overflow: hidden;
+	border-bottom: 3px solid gray;
+}
+
+main .card-2,
+main .card-3 {
+	float: left;
+}
+
+main .card-2 {
+	width: 50%;
+	float: left;
+	height: 100px;
+	padding: 20px;
+}
+
+.two-col,
+.three-col {
+	padding-bottom: 100px;
+}
+
+main img {
+	margin: 80px 0 20px;
+	max-width: 800px;
+}
+
+main .card-3 {
+	width: 33%;
+	float: left;
+	height: 100px;
+	padding: 20px;
+}
+
+footer {
+	clear: both;
+}
+
+footer {
+	margin: 40px 0;
+}
+
+footer p {
+	margin-bottom: 20px;
+}
+
+footer p:last-child {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+address {
+	margin-bottom: 20px;
+}
+
